@@ -14,9 +14,10 @@ const links = [
 interface NavigationProps {
   isCandyCursor?: boolean;
   onCursorToggle?: () => void;
+  onMobileMenuToggle?: (isOpen: boolean) => void;
 }
 
-export function Navigation({ isCandyCursor = false, onCursorToggle }: NavigationProps = {}) {
+export function Navigation({ isCandyCursor = false, onCursorToggle, onMobileMenuToggle }: NavigationProps = {}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -27,6 +28,10 @@ export function Navigation({ isCandyCursor = false, onCursorToggle }: Navigation
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    onMobileMenuToggle?.(isOpen);
+  }, [isOpen, onMobileMenuToggle]);
 
   return (
     <>

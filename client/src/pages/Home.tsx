@@ -67,6 +67,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const [modalType, setModalType] = useState<"success" | "error">("success");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -132,8 +133,8 @@ export default function Home() {
   return (
     <div className={`min-h-screen bg-gradient-to-br from-pink-50 via-white to-blue-50 ${isCandyCursor ? 'cursor-candy' : ''}`}
       style={isCandyCursor ? { cursor: 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 32 32\'><text y=\'28\' font-size=\'28\'>🍬</text></svg>"), auto' } : {}}>
-      <Navigation isCandyCursor={isCandyCursor} onCursorToggle={() => setIsCandyCursor(!isCandyCursor)} />
-      <AnnouncementSlider />
+      <Navigation isCandyCursor={isCandyCursor} onCursorToggle={() => setIsCandyCursor(!isCandyCursor)} onMobileMenuToggle={setIsMobileMenuOpen} />
+      {!isMobileMenuOpen && <AnnouncementSlider />}
 
       {/* --- HERO SECTION --- */}
       <section id="home" className="relative pt-32 pb-10 md:pt-24 md:pb-16 px-6 overflow-hidden">
