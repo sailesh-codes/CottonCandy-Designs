@@ -1,6 +1,3 @@
-import posterImage from "/poster.jpg";
-import bannerImage from "/banner.jpg";
-import couponImage from "/coupon.jpg";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
@@ -25,16 +22,10 @@ import {
   HelpCircle,
   Clock,
   DollarSign,
-  Brush,
-  Sparkles,
-  Zap,
-  MapPin,
-  ArrowUp,
   Rocket,
   Package,
   Phone,
-  CreditCard,
-  ShoppingBag as ShoppingCart
+  CreditCard
 } from "lucide-react";
 import {
   Accordion,
@@ -45,7 +36,6 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { insertMessageSchema } from "@shared";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../components/ui/form";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
@@ -62,7 +52,6 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("poster");
   const [isCandyCursor, setIsCandyCursor] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [isLaunching, setIsLaunching] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
