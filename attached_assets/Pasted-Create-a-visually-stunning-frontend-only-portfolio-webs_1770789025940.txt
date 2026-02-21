@@ -1,0 +1,154 @@
+Create a visually stunning, frontend-only portfolio website for a freelance graphic designer brand named “Cotton Candy Designs.”
+The freelancer specializes in editing social media posts, posters, and banners using design tools such as Canva, Adobe XD, and similar platforms.
+Tech Stack:
+
+
+React.js
+
+
+Tailwind CSS
+
+
+Framer Motion (for smooth, modern animations and transitions)
+
+
+No backend or database (pure frontend website)
+
+
+Overall Design Theme:
+
+
+Base background color: White
+
+
+Accent colors: Soft Pink (#FDB4D5) and Sky Blue (#A0E7FF)
+
+
+Visual style should feel airy, minimal, yet vibrant — conveying creativity, sweetness, and professionalism like actual cotton candy.
+
+
+Include subtle gradients, rounded elements, and gentle glowing shadows for a modern effect.
+
+
+Layout & Sections (Single Page):
+
+
+Navigation Bar:
+
+
+Sticky nav bar with brand name/logo “Cotton Candy Designs” on the left.
+
+
+Smooth scroll links to each section (Home, Services, Products, FAQ, Contact).
+
+
+Use subtle hover effects on the nav items matching the pink-blue accents.
+
+
+
+
+Announcement Slider Section:
+
+
+Directly below the navigation bar, add a horizontal slider or marquee text bar with the message:
+“✨ Get 10% Off on All Orders! ✨”
+
+
+Background of the slider: gradient blend of soft pink and sky blue.
+
+
+Text should be bold, white, and slightly animated (continuous horizontal scroll animation using Framer Motion).
+
+
+
+
+Hero Section:
+
+
+Large, clean hero area introducing “Cotton Candy Designs.”
+
+
+Include an eye-catching animated headline (e.g., slide or fade effect) and a tagline like: “Sweet visuals, crafted with creativity.”
+
+
+Use floating motion effects of soft pastel abstract shapes (pink and blue bubbles, waves, or cotton-candy-like patterns).
+
+
+Prominent “Hire Me” or “Let’s Work Together” button styled with Tailwind gradients and motion hover effect.
+
+
+
+
+Services Section:
+
+
+Showcase 3–4 main services (e.g. Social Media Design, Poster Creation, Banner Design, Event Branding).
+
+
+Each service should be inside a motion-animated card (fade-in, scale-up, or slide-up).
+
+
+Use minimal icons or small illustrations for each.
+
+
+
+
+Products Overview Section:
+
+
+Display a grid or carousel of past design samples or portfolio previews.
+
+
+Each item should have hover effects (e.g. zoom-in with caption overlay).
+
+
+Maintain a consistent soft pink/blue color scheme to strengthen brand identity.
+
+
+
+
+FAQ Section:
+
+
+Add 4–5 frequently asked questions and answers.
+
+
+Implement accordion animations using Framer Motion for expand/collapse behavior.
+
+
+Example topics: pricing, timelines, revision policy, and delivery format.
+
+
+
+
+Contact Section:
+
+
+Simple contact form with fields for name, email, and message.
+
+
+Attractive gradient button with hover animation.
+
+
+Include social links (Instagram, Behance, WhatsApp) below the form with consistent accent styling.
+
+
+
+
+Typography & Aesthetics:
+
+
+Use modern sans-serif fonts such as Poppins, Inter, or Nunito.
+
+
+Maintain balanced whitespace and a clean layout for a professional yet friendly impression.
+
+
+Use soft entrance animations between sections when scrolling (fade or slide effects).
+
+
+Ensure full responsiveness on mobile, tablet, and desktop.
+
+
+Goal:
+Deliver a modern, extraordinary, motion-rich portfolio site for Cotton Candy Designs, highlighting the designer’s creativity and professionalism. The final look should blend elegance with playful design energy — white background with pink and blue accents and smooth Framer Motion animations throughout.

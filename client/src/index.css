@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light pink and blue background - no blur */
+html {
+  background: radial-gradient(ellipse at top left, hsl(var(--primary) / 0.1) 0%, transparent 70%),
+    radial-gradient(ellipse at bottom right, hsl(var(--secondary) / 0.08) 0%, transparent 70%);
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+body {
+  background: transparent;
+}
+
+:root {
+  /* Cotton Candy Palette */
+  /* Base - Airy White/Soft */
+  --background: 210 50% 99%;
+  /* Very pale blue-white */
+  --foreground: 222 47% 20%;
+  /* Soft navy for text contrast */
+
+  /* Primary - Sky Blue */
+  --primary: 220 90% 54%;
+  /* #A0E7FF - Adjusted for HSL */
+  --primary-foreground: 222 47% 20%;
+
+  /* Secondary - Soft Pink */
+  --secondary: 330 81% 55%;
+  /* #FDB4D5 */
+  --secondary-foreground: 333 40% 20%;
+
+  /* Accent - Lavender/Purple for depth */
+  --accent: 260 100% 84%;
+  --accent-foreground: 260 40% 30%;
+
+  /* Muted */
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 50%;
+
+  /* Borders */
+  --border: 196 50% 90%;
+  --input: 196 50% 90%;
+
+  /* Feedback */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 196 100% 81%;
+
+  /* Fonts */
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-secondary selection:text-secondary-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+/* Custom Scrollbar for Chrome/Safari/Edge */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 9999px;
+  border: 2px solid hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--secondary));
+}
